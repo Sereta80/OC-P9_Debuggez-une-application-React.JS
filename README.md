@@ -1,4 +1,4 @@
-# 724 Events
+# 724 Events - **Projet en cours de travail**
 
 ## Description
 L'application est le site d'une agence evenementielle.
