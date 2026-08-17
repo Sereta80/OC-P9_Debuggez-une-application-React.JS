@@ -8,7 +8,6 @@ const Slider = () => {
   const { data } = useData();
   console.log(data);
   const [index, setIndex] = useState(0);
-  // const byDateDesc = [];
   const byDateDesc = (
     data?.focus ? [...data.focus] : []).sort((evtA, evtB) => new Date(evtB.date) - new Date(evtA.date)
   );
