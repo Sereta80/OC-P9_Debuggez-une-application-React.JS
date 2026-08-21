@@ -29,14 +29,22 @@ export const DataProvider = ({ children }) => {
   useEffect(() => {
     if (data) return;
     getData();
-  });
+  }, [data, getData]);
   
+  // Calcul de la prestation la plus récente
+  const last = data?.events
+    ? [...data.events].sort(
+      (evtA, evtB) => new Date(evtB.date) - new Date(evtA.date)
+    )[0]
+    : null;
+
   return (
     <DataContext.Provider
       // eslint-disable-next-line react/jsx-no-constructed-context-values
       value={{
         data,
         error,
+        last, // ajout de last
       }}
     >
       {children}
