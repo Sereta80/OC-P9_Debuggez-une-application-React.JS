@@ -9,6 +9,7 @@ import "./style.css";
 
 const PER_PAGE = 9;
 
+
 const EventList = () => {
   const { data, error } = useData();
   const [type, setType] = useState();
@@ -35,9 +36,10 @@ const EventList = () => {
     setType(evtType);
   };
 
-  const pageNumber = Math.ceil((filteredEvents?.length || 0) / PER_PAGE);
+  const pageNumber = Math.ceil((eventsByType?.length || 0) / PER_PAGE);
 
-  const typeList = new Set(data?.events.map((event) => event.type));
+  const typeList = new Set(data?.events?.map((event) => event.type));
+  console.log("Catégories disponibles :", Array.from(typeList));
   return (
     <>
       {error && <div>An error occured</div>}
