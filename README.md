@@ -4,6 +4,9 @@ Ce projet consiste en la finalisation, le débogage et l'assurance qualité du s
 
 L'application est construite avec **React** et utilise une suite de tests automatisés (**Jest** / **React Testing Library**) ainsi qu'une approche **BDD (Behavior-Driven Development)** pour valider les parcours utilisateurs.
 
+<img width="600" alt="screenshot-724-events" src="https://github.com/user-attachments/assets/44868d42-5fd3-46c9-92da-748e9ab769fa" />
+
+
 ---
 
 ## 🛠️ Stack Technique
