@@ -5,6 +5,7 @@
   width: 100%;
   max-width: 1440px;
   height: 586px;
+  overflow: hidden;
   .SlideCard {
     width: 100%;
     left: 0;
@@ -74,6 +75,11 @@
         text-transform: uppercase;
         font-weight: bold;
       }
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
     }
   }
 }
