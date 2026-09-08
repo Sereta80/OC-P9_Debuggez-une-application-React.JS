@@ -6,7 +6,9 @@ import "./style.scss";
 
 const Menu = () => (
   <nav>
-    <Logo />
+    <a href="#header" aria-label="Retour en haut de la page">
+      <Logo />
+    </a>
     <ul>
       <li>
         <a href="#nos-services">Nos services</a>
